@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          1721030439_Trần Thanh Bình
         </a>
       </header>
     </div>
