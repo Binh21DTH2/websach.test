@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          1721030439_Trần Thanh Bình
+          Nhóm 10 Chuyên đề phát triển phần mềm
         </a>
       </header>
     </div>
