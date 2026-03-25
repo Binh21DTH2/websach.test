@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Trangchu.css';
 
 function BookCover({ title, tone }) {
@@ -122,12 +123,12 @@ export default function Trangchu() {
           </div>
 
           <nav className="tc-nav" aria-label="Điều hướng">
-            <a className="tc-navLink" href="#">
+            <Link className="tc-navLink" to="/">
               Trang chủ
-            </a>
-            <a className="tc-navLink" href="#">
+            </Link>
+            <Link className="tc-navLink" to="/danhmuc">
               Danh mục
-            </a>
+            </Link>
             <a className="tc-navLink" href="#">
               Sách nổi bật
             </a>
@@ -147,9 +148,9 @@ export default function Trangchu() {
                 <path d="M21 21L16.65 16.65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </button>
-            <a className="tc-userPill" href="#">
+            <Link className="tc-userPill" to="/dangnhap">
               Đăng nhập
-            </a>
+            </Link>
           </div>
         </div>
       </header>

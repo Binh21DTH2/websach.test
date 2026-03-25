@@ -1,0 +1,164 @@
+:root {
+  --dm-text: rgba(255, 255, 255, 0.92);
+  --dm-muted: rgba(255, 255, 255, 0.68);
+  --dm-border: rgba(255, 255, 255, 0.12);
+  --dm-card: rgba(255, 255, 255, 0.06);
+  --dm-primary: #7c5cff;
+  --dm-primary2: #39d0ff;
+  --dm-shadow: 0 18px 55px rgba(0, 0, 0, 0.45);
+}
+
+.dmPage {
+  min-height: 100vh;
+  padding: 30px 0 60px;
+}
+
+.dmContainer {
+  width: min(1120px, calc(100% - 24px));
+  margin: 0 auto;
+}
+
+.dmHeader {
+  margin-bottom: 16px;
+}
+
+.dmTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 1000;
+  letter-spacing: -0.03em;
+}
+
+.dmSub {
+  margin: 8px 0 0;
+  color: var(--dm-muted);
+  line-height: 1.65;
+  font-size: 13.8px;
+}
+
+.dmCategoryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.dmCatBtn {
+  height: 46px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 13.5px;
+  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.dmCatBtn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.dmCatBtn--active {
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.26), rgba(57, 208, 255, 0.12));
+  border-color: rgba(124, 92, 255, 0.45);
+}
+
+.dmShelf {
+  margin-top: 18px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--dm-shadow);
+  padding: 18px;
+}
+
+.dmShelfHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dmShelfTitle {
+  font-weight: 1000;
+  letter-spacing: -0.02em;
+}
+
+.dmShelfHint {
+  color: var(--dm-muted);
+  font-size: 13.5px;
+}
+
+.dmShelfGrid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.dmBookMini {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.dmBookMiniCover {
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.28), rgba(57, 208, 255, 0.12));
+  flex: 0 0 auto;
+}
+
+.dmBookMiniInitial {
+  font-weight: 1000;
+}
+
+.dmBookMiniBody {
+  min-width: 0;
+}
+
+.dmBookMiniTitle {
+  font-weight: 950;
+  font-size: 13.8px;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dmBookMiniAuthor {
+  margin-top: 5px;
+  color: var(--dm-muted);
+  font-size: 13.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 960px) {
+  .dmCategoryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dmShelfGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .dmShelfGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
