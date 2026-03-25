@@ -7,7 +7,8 @@
 }
 
 .authPage {
-  min-height: 100vh;
+  /* Tránh đẩy footer xuống dưới màn hình */
+  min-height: 0;
   padding: 34px 0 60px;
 }
 

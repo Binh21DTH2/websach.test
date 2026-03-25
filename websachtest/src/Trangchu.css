@@ -15,7 +15,8 @@
 }
 
 .tc-page {
-  min-height: 100vh;
+  /* Không ép chiều cao 100vh để footer/header của Layout không bị đẩy ra ngoài màn hình */
+  min-height: 0;
   color: var(--tc-text);
   background:
     radial-gradient(1200px 600px at 15% 10%, rgba(124, 92, 255, 0.35), transparent 60%),

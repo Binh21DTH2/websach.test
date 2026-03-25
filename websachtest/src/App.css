@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* Không ép căn giữa toàn trang, giúp layout/đồ họa đồng nhất */
+  text-align: left;
 }
 
 .App-logo {
