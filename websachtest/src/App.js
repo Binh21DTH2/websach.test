@@ -1,23 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Trangchu from './Trangchu';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Nhóm 10 Chuyên đề phát triển phần mềm
-        </a>
-      </header>
+      <Trangchu />
     </div>
   );
 }
